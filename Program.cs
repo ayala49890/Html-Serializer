@@ -23,8 +23,6 @@ ParseHtml(rootElement, htmlLines.Skip(2).ToList());
 Console.WriteLine("HTML Tree:");
 PrintTree(rootElement, "");
 Console.WriteLine("the selector:"); 
-//var list = rootElement.FindElements(Selector.ConvertToSelector(" h2#_1"));
-//var list = rootElement.FindElements(Selector.ConvertToSelector(" div.md-sidebar__inner nav.md-nav--secondary label.md-nav__title span"));
 var list = rootElement.FindElements(Selector.ConvertToSelector("li.md-nav__item a.md-nav__link"));
 
 foreach (var l in list)
